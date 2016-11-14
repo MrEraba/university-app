@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="universidadApp" ng-controller="mainCtrl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Universidad</title>
+
+
+        <!-- Incluir Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Estilo personalizado -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+        <!-- Incluir AngularJS -->
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-route.min.js"></script>
+        <script src="js/lib/ui-utils.min.js"></script>
+
+
+
+        <script src="js/app.js"></script>
+        <script src="js/config.js"></script>
+
+        <!-- Controladores de páginas -->
+        <script src="js/inicioCtrl.js"></script>
+        <script src="js/profesoresCtrl.js"></script>
+        <script src="js/alumnosCtrl.js"></script>
+        <script src="js/alumnoCtrl.js"></script>
+
+
+    </head>
+    <body>
+
+        <div ng-include="menuSuperior"></div>
+
+
+        <div class="container">
+        <!-- La pagina principal ira aquí -->
+
+            <div ng-view></div>
+
+        </div><!-- /.container -->
+
+
+    </body>
+</html>
